@@ -30,8 +30,7 @@ namespace Net8.Example.HttpLogger
             app.UseAuthorization();
 
             //middleware
-            app.UseMiddleware<HttpRequestMiddleware>();
-            app.UseMiddleware<HttpResponseMiddleware>();
+            app.UseMiddleware<Log_Request_Response_Middleware>();
 
             app.MapControllers();
 
